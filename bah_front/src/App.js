@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-const baseUrl = 
+let baseUrl = 'http://localhost:3000'
+
 export default class App extends Component {
   constructor(props) 
   render() {
