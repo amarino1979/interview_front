@@ -50,7 +50,7 @@
     - Though the project is not final, this is a visual representation of my thinking and direction for task:
     <img src='assets/SoldierPage.png>
 
-    ![](assets/SoldierPage.png)
+    ![](./assets/SoldierPage.png)
 
     ![](assets/UpdatePage.png)
 
