@@ -1,0 +1,14 @@
+export const buildRanks =  [
+        'Private',
+        'Private First Class',
+        'Specialist',
+        'Corporal',
+        'Sergeant',
+        'Staff Sergeant',
+        'Sergeant First Class',
+        'Master Sergeant',
+        'First Sergeant',
+        'Sergeant Major',
+        'Command Sergeant Major',
+        'Sergeant Major of the Army',
+]

@@ -24,7 +24,6 @@ export default class Home extends Component {
         .then(res => {
             return res.json();
         }).then((data) => {
-            console.log(data)
             this.setState({
             soldiers: data,
             })
@@ -32,7 +31,7 @@ export default class Home extends Component {
     }
 
     render() {
-        console.log(this.state.soldiers)
+        // console.log(this.state.soldiers)
         return (
             <div className="grid-container">
                 <div className="grid1"><h1>Client Specs</h1></div>
