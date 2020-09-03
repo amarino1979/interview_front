@@ -48,9 +48,14 @@
 
 ### Mock-ups for app
     - Though the project is not final, this is a visual representation of my thinking and direction for task:
-        
+    
+    - Home Page     
    ![Screen Shot 2020-09-03 at 9 15 24 AM](https://user-images.githubusercontent.com/57571847/92123216-5f85c380-edca-11ea-886e-ed113e0ad2a0.png)
+   
+    - Client Page
    ![Screen Shot 2020-09-03 at 9 15 46 AM](https://user-images.githubusercontent.com/57571847/92124992-76c5b080-edcc-11ea-8144-c88e2742dcb4.png)
+   
+    - Update Page
    ![Screen Shot 2020-09-03 at 9 22 16 AM](https://user-images.githubusercontent.com/57571847/92125011-7c22fb00-edcc-11ea-8b80-502886b9519e.png)
 
 
