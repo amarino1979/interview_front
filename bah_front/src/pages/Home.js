@@ -34,7 +34,8 @@ export default class Home extends Component {
     render() {
         console.log(this.state.soldiers)
         return (
-            <div>
+            <div className="grid-container">
+                <div className="grid1"><h1>Client Specs</h1></div>
                 <ClientForm />
                 <SoldierIndex 
                     soldiers = {this.state.soldiers}

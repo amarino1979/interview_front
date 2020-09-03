@@ -29,7 +29,8 @@ export default class clientForm extends Component {
         // console.log(this.state);
         return (
 
-            <div>
+            
+                <div className="grid2">
                 <form>
                     <div className="form-row">
                         <div className="col-md-6 mb-3">
@@ -58,31 +59,41 @@ export default class clientForm extends Component {
                                         </select>
                                         
                                     </div>
-                                    {/* <div class="col-md-3 mb-3">
-                                        <label for="validationDefault05">Zip</label>
-                                        <input type="text" class="form-control" id="validationDefault05" required/>
-                                    </div> */}
                                     </div>
-                                    <select className="custom-select">
-                                        <option defaultValue>Select Rank</option>
-                                        <option value="1">Private</option>
-                                        <option value="2">Private First Class</option>
-                                        <option value="3">Specialist</option>
-                                        <option value="4">Corporal</option>
-                                        <option value="5">Sergeant</option>
-                                        <option value="6">Staff Sergeant</option>
-                                        <option value="7">Sergeant First Class</option>
-                                        <option value="8">Master Sergeant</option>
-                                        <option value="9">First Sergeant</option>
-                                        <option value="10">Sergeant Major</option>
-                                        <option value="11">Command Sergeant Major</option>
-                                        <option value="12">Sergeant Major of the Army</option>
-                                    </select>
-                                    <div className="custom-file">
-                                        <input type="file" className="custom-file-input" id="customFile" />
-                                        <label className="custom-file-label" htmlFor="customFile">Select Image</label>
-                                    </div>
-                                    <button className="btn btn-primary" type="submit">Submit form</button>
+                                    <div className="form-row">
+                                        <div className="col-md-6 mb-3"></div>
+                                        <select className="custom-select">
+                                            <option defaultValue>Select Rank</option>
+                                            <option value="1">Private</option>
+                                            <option value="2">Private First Class</option>
+                                            <option value="3">Specialist</option>
+                                            <option value="4">Corporal</option>
+                                            <option value="5">Sergeant</option>
+                                            <option value="6">Staff Sergeant</option>
+                                            <option value="7">Sergeant First Class</option>
+                                            <option value="8">Master Sergeant</option>
+                                            <option value="9">First Sergeant</option>
+                                            <option value="10">Sergeant Major</option>
+                                            <option value="11">Command Sergeant Major</option>
+                                            <option value="12">Sergeant Major of the Army</option>
+                                        </select>
+                                       </div>
+                                       <div className="form-row1">
+                                            <div className="col-md-6 mb-3"></div> 
+                                            <div className="custom-file">
+                                                <input type="file" className="custom-file-input" id="customFile" />
+                                                <label className="custom-file-label" htmlFor="customFile">Select Image</label>
+                                            </div>
+                                        </div>
+                                        <button className="btn btn-primary" type="submit">Submit form</button>
+                                </form>
+                                <form className="form-inline my-2 my-lg-0">
+                                    <input className="form-control mr-md-6" type="search" placeholder="Search by Name" aria-label="Search"/>
+                                    <button className="btn btn-primary" type="submit">Search</button>
+                                </form>
+                                <form className="form-inline my-2 my-lg-0">
+                                    <input className="form-control mr-md-6" type="search" placeholder="Search by Rank" aria-label="Search"/>
+                                    <button className="btn btn-primary" type="submit">Search</button>
                                 </form>
                             </div>
         )

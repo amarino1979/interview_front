@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(121, 146, 121);
+}
+
+/* home page */
+.grid1 { 
+    grid-area: header; 
+    background-color: rgb(199, 198, 198);
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid2 { grid-area: form; }
+.grid3 { grid-area: index; }
+
+.grid-container {
+  display: grid;
+  grid:
+  'header header header header header header'
+  'form index index index index index';
+  grid-gap: 20px;
+  background-color: rgb(121, 146, 121);
+  padding: 20px;
+}
+
+/* client form */
+.form-row1 {
+    padding: 10px 0px 10px 0px;
+}
+
+.form-inline {
+    padding: 10px 0px;
+}
+button.btn.btn-primary {
+    background-color:  rgb(52, 80, 52);
+    border-color: rgb(52, 80, 52);
+}
+
+button.btn.btn-primary:hover {
+    background-color:  rgb(82, 90, 82);
+    border-color: rgb(52, 80, 52);
+}
+
+/* client index */
+h3.CI {
+    text-align: center;
+}
+
+/*___Media Queries___ */
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid:
+        'header header header header header header'
+        'form form form form form form'
+        'index index index index index index';
+        grid-gap: 20px;
+        background-color: rgb(121, 146, 121);
+        padding: 20px;
+      }
+}
+
+@media (max-width: 576px) {
+    .grid-container {
+        display: grid;
+        grid:
+        'header header header header header header'
+        'form form form form form form'
+        'index index index index index index';
+        grid-gap: 20px;
+        background-color: rgb(121, 146, 121);
+        padding: 20px;
+      }
+}

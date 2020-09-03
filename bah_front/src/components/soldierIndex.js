@@ -10,26 +10,29 @@ export default class soldierIndex extends Component {
     render() {
         return (
             <React.Fragment>
-                <h1>Client Index</h1>
-                <table>
-                    <thead>
+                <div className="grid3">
+                <h3 className="CI">Client Index</h3>
+                <p>Click on the clients name.</p>
+                <table className="table">
+                    <thead className="thead">
                         <tr>
                             <th>Name</th>
                             <th>Rank</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="tbody">
                         {this.props.soldiers.map(soldier => {
                             return (
                                 <tr key={soldier._id} >
-                                    <td onClick={() => this.renderSoldier(soldier)}>{soldier.name}</td>
-                                    <td>{soldier.rank}</td>
+                                    <td className="tableData" onClick={() => this.renderSoldier(soldier)}><a>{soldier.name}</a></td>
+                                    <td className="tableData">{soldier.rank}</td>
                                 </tr>
                             )
                         })
                         }
                     </tbody>
                 </table>
+                </div>
             </React.Fragment>
         )
     }
