@@ -48,7 +48,7 @@
 
 ### Mock-ups for app
     - Though the project is not final, this is a visual representation of my thinking and direction for task:
-    ![](assets/Home.png)
+    <img src='assets/SoldierPage.png>
 
     ![](assets/SoldierPage.png)
 
