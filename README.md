@@ -48,8 +48,7 @@
 
 ### Mock-ups for app
     - Though the project is not final, this is a visual representation of my thinking and direction for task:
-    <img src='assets/SoldierPage.png>
-
+    ![Screen Shot 2020-09-03 at 9 15 24 AM](https://user-images.githubusercontent.com/57571847/92123216-5f85c380-edca-11ea-886e-ed113e0ad2a0.png)
     ![](./assets/SoldierPage.png)
 
     ![](assets/UpdatePage.png)
