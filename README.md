@@ -44,7 +44,7 @@
 
     - found a solution on stackoverflow: https://stackoverflow.com/questions/53582878/aws-ec2-sudo-apt-get-command-not-found-error
 
-    but found that upon implementation I could install Node but the other packages were requiring "yum" instead of apt-get in curl requests.  Because of time I switched to designing and implementing app components in Github on localhost instead of trying to build in the aws environment for now.  Will readdress the issure if I have time.
+    but found that upon implementation I could install Node but the other packages were requiring "yum" instead of apt-get in curl requests.  Also, tried to use npm install [dependency-name] but that wouldn't work either.  Because of time I switched to designing and implementing app components in Github on localhost instead of trying to build in the aws environment for now.  Will readdress the issure if I have time.
 
 ### Mock-ups for app
     - Though the project is not final, this is a visual representation of my thinking and direction for task:
@@ -69,3 +69,7 @@
 ### Other
 - this exercise was fun to think through, it took way longer in the aws space than I have experienced in other spaces like heroku and github pages...
 - I am pleased with my progress b/c in school our projects would have been over a weeks time and so for me in this time-frame I feel like I have accomplished much
+- tried to deploy in Heroku but MongoDB acquired mLab and created MongoDB Atlas.  You can no longer add-on mlab as a CMS. Found a possible route with Strapi, an open-source, Node. js based, headless CMS. 
+- deploying docs: https://strapi.io/documentation/3.0.0-beta.x/guides/databases.html#mongodb-installation
+- tutorial on: https://youtu.be/HHnRsZwFmR8
+- could use object rocket at a cost of $46 monthly...not gonna happen
