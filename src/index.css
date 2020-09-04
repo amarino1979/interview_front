@@ -19,7 +19,7 @@ body {
   grid:
   'header header header header header header'
   'form index index index index index';
-  grid-gap: 20px;
+  grid-gap: 40px;
   background-color: rgb(121, 146, 121);
   padding: 20px;
 }
@@ -45,6 +45,14 @@ button.btn.btn-primary:hover {
 /* client index */
 h3.CI {
     text-align: center;
+}
+
+.search-container {
+    display: inline-flex;
+}
+
+.form-inline {
+    margin: 0px 15px 0px 0px;
 }
 
 /*___Media Queries___ */

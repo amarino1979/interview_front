@@ -30,12 +30,19 @@ export default class Home extends Component {
         })
     }
 
+    updateSoldiers = async (soldier) => {
+        await this.setState({soldiers: [...this.state.soldiers, soldier]})
+        console.log(this.state)
+    }
+ 
     render() {
         // console.log(this.state.soldiers)
         return (
             <div className="grid-container">
                 <div className="grid1"><h1>Client Specs</h1></div>
-                <ClientForm />
+                <ClientForm
+                    updateSoldiers={this.updateSoldiers}
+                />
                 <SoldierIndex 
                     soldiers = {this.state.soldiers}
                     history={this.props.history}

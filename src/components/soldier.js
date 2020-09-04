@@ -15,6 +15,16 @@ export default class soldier extends Component {
     handleUpdateRank = () => {
         this.setState({showInput: true})
     }
+    handleSave = (event) => {
+        event.preventDefault()
+        const newRecord =  {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            city: this.state.city,
+            state: this.state.state,
+
+        }
+    }
 
     render() {
         const formattedDate = moment(this.state.soldier.timeStamp).format("MMMM Do YYYY");
@@ -23,7 +33,9 @@ export default class soldier extends Component {
             <div className="card" style={{ width: "18rem" }}>
                 <img src={Photo1} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">Client: {this.state.soldier.name}</h5>
+                <h5 className="card-title">Client: {this.state.soldier.lastName}, {this.state.soldier.firstName}</h5>
+                    <p className="card-text">City: {this.state.soldier.city}</p>
+                    <p className="card-text">State: {this.state.soldier.state}</p>
                     <p className="card-text">Rank: {this.state.soldier.rank}</p>
                 </div>
                 <ul className="list-group list-group-flush">
@@ -43,20 +55,6 @@ export default class soldier extends Component {
                         </div>
                         }
                     </li>
-                    {/* <li>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style={{ width: "50%" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style={{ width: "75%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li> */}
                 </ul>
                 <div className="card-body">
                     <a href="#" onClick={this.handleUpdateRank} class="card-link">Update Client Record</a>
@@ -66,3 +64,18 @@ export default class soldier extends Component {
         )
     }
 }
+
+{/* <li>
+    <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-info" role="progressbar" style={{ width: "50%" }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style={{ width: "75%" }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style={{ width: "100%" }} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+</li> */}
