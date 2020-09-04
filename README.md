@@ -60,10 +60,9 @@
 
 
 ### Features to be built still:
-- Create soldier in the front end
 - Search functions for the index by name and by rank
-- rank dropdowns need to be mapped and not hard coded.  Probably in a config file...
-- save button added for the rank to be updated
+- rank dropdowns need to be added to rank search and on soldier page
+- save button functionality and ternary need to be added for the rank to be updated
 - ability to record notes and update to UI
 - authorizations
 
